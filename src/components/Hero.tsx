@@ -11,7 +11,7 @@ export default function Hero() {
           </h1>
           <h2 className="text-gray-400 text-lg md:text-xl pb-4">
           To my portfolio, here is a bit about myself: Im 23 years of age, I have 6 years as Software Engineer and have a wide-range of a tech stack including: Unity, .NET, Typescript, Graphql, Frontend & Api Development and many more.          </h2>
-          <button onClick={() => { window.location.href = "/resume.pdf" }} className=" hover:bg-white mr-4 hover:text-[#0e111f] text-white font-bold py-3 px-7 rounded-full border">
+          <button onClick={() => { window.location.href = "/Anthony Key - CV.pdf" }} className=" hover:bg-white mr-4 hover:text-[#0e111f] text-white font-bold py-3 px-7 rounded-full border">
             Resume
           </button>
 

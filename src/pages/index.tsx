@@ -14,11 +14,13 @@ export default function Home() {
 
         <Hero />
 
+        <section id='skills' className='bg-[#1c223b]'></section>
+
         <div className="w-full">
           <FlipCard />
         </div>
 
-        
+        <section id='projects' className='bg-[#1c223b]'></section>
         <div className="w-full">
           <VideoCards />
         </div>

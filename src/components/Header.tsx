@@ -29,7 +29,7 @@ export default function Header(props: { home: string, services: string, technolo
               </li>
 
               <li>
-                <Link href={props.services} className="hover:underline block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-500 lg:p-0">
+                <Link href="#skills" className="hover:underline block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-500 lg:p-0">
                   Skills
                 </Link>
               </li>
