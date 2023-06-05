@@ -17,10 +17,10 @@ const Wrapper = ({ children, title }: WrapperProps) => {
   return (
     <div>
       <Head>
-        <title>Arneura | Software Consultancy</title>
+        <title>Anthony Key | Portfolio</title>
         <meta
           name="description"
-          content="Unleash the power of personalized software solutions. Our experts combine cutting-edge technology and industry expertise to create custom software perfectly tailored to your business."
+          content="A range of my career projects in using many programming languages, sdks and more in an agile setting."
         />
         <link rel="icon" href="/favicon.ico" />
       </Head>
