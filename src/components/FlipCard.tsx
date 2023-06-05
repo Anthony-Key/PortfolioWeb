@@ -72,7 +72,7 @@ export default function FadeInOnScroll() {
               <div className="h-auto flex-grow">
                 <h1 className="mt-4 font-semibold pb-2 text-center">.Net</h1>
                 <span className="text-left">
-                As an individual developer, I have built front-end and back-end web apps and APIs using .NET. Notable examples include front-end interfaces for hellosupermarket.co.uk and this portfolio website.
+                As an individual developer, I have built front-end and back-end web apps and APIs using .NET. Some examples of usage would be building an API that has access to a database for my geo-location project.
                 </span>
               </div>
             </div>
