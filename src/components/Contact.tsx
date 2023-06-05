@@ -162,7 +162,7 @@ export default function Contact(props: {}) {
                 setMessage(e.target.value);
               }}
               className="block w-full p-4 text-gray-900 border border-gray-300 rounded-lg dark:bg-[#2d3656] sm:text-md resize-vertical h-auto focus:ring-blue-500 focus:border-blue-500 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
-              placeholder="Tell us about your project"
+              placeholder="Ask me anything"
             ></textarea>
             <button
               type="button"
