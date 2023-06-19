@@ -7,25 +7,53 @@ export default function Hero() {
       <div className="flex flex-col items-center justify-center md:flex-row md:p-40">
         <div className="w-full md:w-2/4 max-w-lg text-center md:text-left">
           <h1 className="font-bold text-arneuraHeroText text-4xl md:text-5xl pb-3">
-          Welcome
+            Welcome, I'm Anthony
           </h1>
-          <h2 className="text-gray-400 text-lg md:text-xl pb-4">
-          To my portfolio, here is a bit about myself: Im 23 years of age, I have 6 years as Software Engineer and have a wide-range of a tech stack including: Unity, .NET, Typescript, Graphql, Frontend & Api Development and many more.          </h2>
-          <button onClick={() => { window.location.href = "/Anthony Key - CV.pdf" }} className=" hover:bg-white mr-4 hover:text-[#0e111f] text-white font-bold py-3 px-7 rounded-full border">
+          <h2 className="text-gray-300 text-lg md:text-xl pb-4">
+            I am a proficient software engineer, aged 23, possessing a
+            comprehensive range of skills and boasting six years of experience
+            in the field. Over the course of my career, I have acquired
+            expertise in a multitude of technologies such as Unity, .NET,
+            Typescript, GraphQL, as well as frontend and API development, among
+            others.
+          </h2>
+          <button
+            onClick={() => {
+              window.location.href = "/Anthony Key - CV.pdf";
+            }}
+            className=" hover:bg-white mr-4 hover:text-[#0e111f] text-white font-bold py-3 px-7 rounded-full border"
+          >
             Resume
           </button>
 
-          <button onClick={() => { window.location.href = "https://github.com/Anthony-Key" }} className="mr-4 hover:bg-white hover:text-[#0e111f] text-white font-bold py-3 px-7 rounded-full border">
+          <button
+            onClick={() => {
+              window.location.href = "https://github.com/Anthony-Key";
+            }}
+            className="mr-4 hover:bg-white hover:text-[#0e111f] text-white font-bold py-3 px-7 rounded-full border"
+          >
             Github
           </button>
 
-          <button onClick={() => { window.location.href = "https://www.linkedin.com/in/anthonylloydkey/" }} className=" hover:bg-white hover:text-[#0e111f] text-white font-bold py-3 px-7 rounded-full border">
+          <button
+            onClick={() => {
+              window.location.href =
+                "https://www.linkedin.com/in/anthonylloydkey/";
+            }}
+            className=" hover:bg-white hover:text-[#0e111f] text-white font-bold py-3 px-7 rounded-full border"
+          >
             Linkedin
           </button>
         </div>
         <div className="w-full md:w-2/4 flex justify-center items-center mt-5 md:mt-0">
           <div className="hidden md:block">
-            <Image src={GroupImg} alt="Bespoke Software Banner Image" width={450} height={20} className="float-image rounded-full" />
+            <Image
+              src={GroupImg}
+              alt="Bespoke Software Banner Image"
+              width={450}
+              height={20}
+              className="float-image rounded-full border-white border-2"
+            />
           </div>
         </div>
       </div>
