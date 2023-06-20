@@ -7,7 +7,7 @@ export default function Hero() {
       <div className="flex flex-col items-center justify-center md:flex-row md:p-40">
         <div className="w-full md:w-2/4 max-w-lg text-center md:text-left">
           <h1 className="font-bold text-arneuraHeroText text-4xl md:text-5xl pb-3">
-            Welcome, I'm Anthony
+            {`Welcome, I'm Anthony`}
           </h1>
           <h2 className="text-gray-300 text-lg md:text-xl pb-4">
             I am a proficient software engineer, aged 23, possessing a
