@@ -166,3 +166,9 @@ body {
     display: none;
   }
 }
+
+@media (max-width: 640px) {
+  .mobileHero {
+    padding-top: 50%;
+  }
+}

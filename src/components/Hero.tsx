@@ -3,7 +3,7 @@ import GroupImg from "../../public/330332648_220408960497151_8429396654049302392
 
 export default function Hero() {
   return (
-    <div className="pt-20 w-auto h-screen bg-gradient-to-b from-[#0e111f] to-[#1c223b]">
+    <div className=" w-auto h-screen bg-gradient-to-b from-[#0e111f] to-[#1c223b] mobileHero">
       <div className="flex flex-col items-center justify-center md:flex-row md:p-40">
         <div className="w-full md:w-2/4 max-w-lg text-center md:text-left">
           <h1 className="font-bold text-arneuraHeroText text-4xl md:text-5xl pb-3">
