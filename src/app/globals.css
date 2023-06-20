@@ -107,7 +107,7 @@ body {
 }
 
 .float-image {
-  animation: floatUpDown 5s ease-in-out infinite;
+  animation: floatUpDown 15s ease-in-out infinite;
 }
 
 .divider {
