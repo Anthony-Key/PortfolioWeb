@@ -106,8 +106,69 @@ export default function FadeInOnScroll() {
               allowFullScreen
             ></iframe>{" "}
           </div>
+
           <div
             ref={(ref) => (elementRefs.current[4] = ref)}
+            className="opacity-0 p-2 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 flex justify-center md:justify-start items-center hover:scale-105"
+          >
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/QA_bTUDs58Q"
+              title="two"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          </div>
+
+          <div
+            ref={(ref) => (elementRefs.current[5] = ref)}
+            className="opacity-0 p-2 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 flex justify-center md:justify-start items-center hover:scale-105"
+          >
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/_BX6EU4jXQk"
+              title="Factory Wrong"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          </div>
+
+          <div
+            ref={(ref) => (elementRefs.current[6] = ref)}
+            className="opacity-0 p-2 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 flex justify-center md:justify-start items-center hover:scale-105"
+          >
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/tNEwbIzz878"
+              title="Factory FireSpreading"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          </div>
+
+          <div
+            ref={(ref) => (elementRefs.current[7] = ref)}
+            className="opacity-0 p-2 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 flex justify-center md:justify-start items-center hover:scale-105"
+          >
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/52TWUcULHKw"
+              title="Factory Practical Extinguish"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
+          </div>
+
+          <div
+            ref={(ref) => (elementRefs.current[8] = ref)}
             className="opacity-0 p-2 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 flex justify-center md:justify-start items-center hover:scale-105"
           >
             <iframe
@@ -121,7 +182,7 @@ export default function FadeInOnScroll() {
             ></iframe>{" "}
           </div>
           <div
-            ref={(ref) => (elementRefs.current[5] = ref)}
+            ref={(ref) => (elementRefs.current[9] = ref)}
             className="opacity-0 p-2 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 flex justify-center md:justify-start items-center hover:scale-105"
           >
             <iframe
@@ -135,7 +196,7 @@ export default function FadeInOnScroll() {
             ></iframe>{" "}
           </div>
           <div
-            ref={(ref) => (elementRefs.current[6] = ref)}
+            ref={(ref) => (elementRefs.current[10] = ref)}
             className="opacity-0 p-2 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 flex justify-center md:justify-start items-center hover:scale-105"
           >
             <iframe
@@ -149,7 +210,7 @@ export default function FadeInOnScroll() {
             ></iframe>{" "}
           </div>
           <div
-            ref={(ref) => (elementRefs.current[7] = ref)}
+            ref={(ref) => (elementRefs.current[11] = ref)}
             className="opacity-0 p-2 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 flex justify-center md:justify-start items-center hover:scale-105"
           >
             <iframe
@@ -165,6 +226,7 @@ export default function FadeInOnScroll() {
         </div>
       </div>
       <h2 className="text-gray-400 text-center pb-5 text-2xl font-bold"></h2>
+      <div className="container mx-auto"></div>
     </div>
   );
 }
