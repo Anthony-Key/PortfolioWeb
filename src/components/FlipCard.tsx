@@ -57,28 +57,27 @@ export default function FadeInOnScroll() {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 pb-8 text-[#c7c7c7]">
           <div
-            className="opacity-0 p-5 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 "
+            className=" opacity-0 p-5 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 "
             ref={(ref) => (elementRefs.current[0] = ref)}
           >
             <div className="p-5 flex items-start">
               <div className="mr-4">
                 <Image
-                  src={Languages}
-                  alt="Customer Satisfaction"
+                  src={Unity}
+                  alt="Customer Communication"
                   width={80}
                 ></Image>
               </div>
-              <div className="">
-                <h1 className="font-semibold text-left text-2xl pt-6">
-                  Languages
-                </h1>
+              <div>
+                <h1 className="font-semibold text-left text-2xl pt-6">Unity</h1>
               </div>
             </div>
             <span className="text-left text-lg">
-              Versatile in C#, Java, TypeScript, and Python, I select the most
-              suitable language for each projects unique requirements. I deliver
-              efficient and high-performance solutions tailored to specific
-              needs.
+              {" "}
+              With 6 years of experience, including commercial work, I have a
+              strong foundation in Unity. My portfolio showcases achievements
+              like published games on Google Play and Steam, as well as VR Unity
+              projects.
             </span>
           </div>
 
@@ -179,30 +178,30 @@ export default function FadeInOnScroll() {
           </div>
 
           <div
-            className=" opacity-0 p-5 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 "
+            className="opacity-0 p-5 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 "
             ref={(ref) => (elementRefs.current[5] = ref)}
           >
             <div className="p-5 flex items-start">
               <div className="mr-4">
                 <Image
-                  src={Unity}
-                  alt="Customer Communication"
+                  src={Languages}
+                  alt="Customer Satisfaction"
                   width={80}
                 ></Image>
               </div>
-              <div>
-                <h1 className="font-semibold text-left text-2xl pt-6">Unity</h1>
+              <div className="">
+                <h1 className="font-semibold text-left text-2xl pt-6">
+                  Languages
+                </h1>
               </div>
             </div>
             <span className="text-left text-lg">
-              {" "}
-              With 6 years of experience, including commercial work, I have a
-              strong foundation in Unity. My portfolio showcases achievements
-              like published games on Google Play and Steam, as well as VR Unity
-              projects.
+              Versatile in C#, Java, TypeScript, and Python, I select the most
+              suitable language for each projects unique requirements. I deliver
+              efficient and high-performance solutions tailored to specific
+              needs.
             </span>
           </div>
-
           <div
             className=" opacity-0 p-5 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 "
             ref={(ref) => (elementRefs.current[6] = ref)}
