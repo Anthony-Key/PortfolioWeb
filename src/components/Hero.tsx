@@ -52,7 +52,7 @@ export default function Hero() {
               alt="Bespoke Software Banner Image"
               width={450}
               height={20}
-              className="float-image rounded-full border-white border-2"
+              className="float-image rounded-full border-white border-4"
             />
           </div>
         </div>
