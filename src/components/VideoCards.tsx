@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
-import Smile from "../../public/smile-svgrepo-com.svg";
-import Agile from "../../public/speed-svgrepo-com.svg";
+import Smile from "../../public/Screenshot-2023-06-23-094433.svg";
+import Agile from "../../public/Screenshot 2023-06-23 094433.svg";
 import Smart from "../../public/bulb-svgrepo-com.svg";
 import Communication from "../../public/comments-svgrepo-com.svg";
 
@@ -41,13 +41,14 @@ export default function FadeInOnScroll() {
   }, []);
 
   return (
-    <div className=" w-full bg-[#1c223b] ">
-      <h1 className="font-bold mb-3 text-3xl text-center text-white ">
+    <div className=" w-full bg-[#1c223b]">
+      <h1 className="font-bold mb-3 text-3xl text-center text-white">
         Projects & Videos
       </h1>
       <h2 className="text-gray-400 text-center pb-5 text-2xl font-bold">
-        Unity
+        All projects are built from the ground up without any templates.
       </h2>
+      <h2 className="text-white text-center pb-5 text-2xl font-bold">Unity</h2>
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 pb-8 text-[#c7c7c7]">
           <div
@@ -225,8 +226,25 @@ export default function FadeInOnScroll() {
           </div>
         </div>
       </div>
-      <h2 className="text-gray-400 text-center pb-5 text-2xl font-bold"></h2>
-      <div className="container mx-auto"></div>
+      <h2 className="text-white text-center pb-5 text-2xl font-bold">
+        Website Projects (Typescript, React, Graphql & Tailwind)
+      </h2>
+      <div className="container mx-auto">
+        <a href="https://hellosupermarket.co.uk">
+          <img
+            className=" border-white border-2 m-10"
+            src="screen.jpg"
+            width={600}
+            height={400}
+          ></img>
+        </a>
+        <img
+          className=" border-white border-2"
+          src="screen2.jpg"
+          width={540}
+          height={400}
+        ></img>
+      </div>
     </div>
   );
 }
