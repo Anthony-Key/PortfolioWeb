@@ -33,7 +33,7 @@ export default function Hero() {
           </h3>
           <button
             onClick={() => {
-              window.location.href = "/Anthony Key - CV.pdf";
+              window.location.href = "/AnthonyKeyCv.pdf";
             }}
             className=" hover:bg-white mr-4 hover:text-[#0e111f] text-white font-bold py-3 px-7 rounded-full border inline-flex items-center"
           >
