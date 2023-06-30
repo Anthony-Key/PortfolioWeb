@@ -1,9 +1,4 @@
-import Image from "next/image";
 import React, { useEffect, useRef } from "react";
-import Smile from "../../public/Screenshot-2023-06-23-094433.svg";
-import Agile from "../../public/Screenshot 2023-06-23 094433.svg";
-import Smart from "../../public/bulb-svgrepo-com.svg";
-import Communication from "../../public/comments-svgrepo-com.svg";
 
 export default function FadeInOnScroll() {
   const elementRefs = useRef<Array<HTMLDivElement | null>>([]);
@@ -20,7 +15,7 @@ export default function FadeInOnScroll() {
         if (entry.isIntersecting) {
           setTimeout(() => {
             entry.target.classList.add("fade-in");
-          }, 200 * index); // Adjust the delay as needed (in milliseconds)
+          }, 200 * index);
         }
       });
     }, options);
@@ -236,6 +231,7 @@ export default function FadeInOnScroll() {
             src="screen.jpg"
             width={600}
             height={400}
+            alt="Website that I built using typescript, graphql, tailwind and react"
           ></img>
         </a>
 
@@ -245,14 +241,9 @@ export default function FadeInOnScroll() {
             src="screen2.jpg"
             width={530}
             height={400}
+            alt="Link to portfolio"
           ></img>
         </a>
-        {/* <img
-          className=" border-white border-2 m-10"
-          src="screen2.jpg"
-          width={600}
-          height={400}
-        ></img> */}
       </div>
     </div>
   );

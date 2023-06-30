@@ -1,7 +1,42 @@
 import Image from "next/image";
-import GroupImg from "../../public/348330084_3125719907732203_3401427211591634901_n.jpg";
+import GroupImg from "../../public/ProfilePicture2.jpg";
+import { useEffect, useRef } from "react";
 
 export default function Hero() {
+  const elementRefs = useRef<Array<HTMLButtonElement | null>>([]);
+
+  useEffect(() => {
+    const options = {
+      root: null as Element | null,
+      rootMargin: "0px",
+      threshold: 0.3,
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry, index) => {
+        if (entry.isIntersecting) {
+          setTimeout(() => {
+            entry.target.classList.add("fade-in");
+          }, 200 * index); // Adjust the delay as needed (in milliseconds)
+        }
+      });
+    }, options);
+
+    elementRefs.current.forEach((ref) => {
+      if (ref) {
+        observer.observe(ref);
+      }
+    });
+
+    return () => {
+      elementRefs.current.forEach((ref) => {
+        if (ref) {
+          observer.unobserve(ref);
+        }
+      });
+    };
+  }, []);
+
   return (
     <div className=" w-auto h-screen bg-gradient-to-b from-[#0e111f] to-[#1c223b] mobileHero">
       <div className="flex flex-col items-center justify-center md:flex-row md:p-40">
@@ -35,7 +70,8 @@ export default function Hero() {
             onClick={() => {
               window.location.href = "/AnthonyKeyCv.pdf";
             }}
-            className=" hover:bg-white mr-4 hover:text-[#0e111f] text-white font-bold py-3 px-7 rounded-full border inline-flex items-center"
+            ref={(ref) => (elementRefs.current[0] = ref)}
+            className=" opacity-0 hover:bg-white mr-4 hover:text-[#0e111f] text-white font-bold py-3 px-7 rounded-full border inline-flex items-center"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +94,8 @@ export default function Hero() {
             onClick={() => {
               window.location.href = "https://github.com/Anthony-Key";
             }}
-            className="mr-4 hover:bg-white hover:text-[#0e111f] text-white font-bold py-3 px-7 rounded-full border inline-flex items-center"
+            ref={(ref) => (elementRefs.current[1] = ref)}
+            className="opacity-0 mr-4 hover:bg-white hover:text-[#0e111f] text-white font-bold py-3 px-7 rounded-full border inline-flex items-center"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +117,8 @@ export default function Hero() {
               window.location.href =
                 "https://www.linkedin.com/in/anthonylloydkey/";
             }}
-            className=" hover:bg-white hover:text-[#0e111f] text-white font-bold py-3 px-7 rounded-full border inline-flex items-center"
+            ref={(ref) => (elementRefs.current[2] = ref)}
+            className=" opacity-0 hover:bg-white hover:text-[#0e111f] text-white font-bold py-3 px-7 rounded-full border inline-flex items-center"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"

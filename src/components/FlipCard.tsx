@@ -1,16 +1,12 @@
 import Image from "next/image";
 import React, { useEffect, useRef } from "react";
-import Smile from "../../public/smile-svgrepo-com.svg";
 import Agile from "../../public/speed-svgrepo-com.svg";
-import Smart from "../../public/bulb-svgrepo-com.svg";
-import Communication from "../../public/comments-svgrepo-com.svg";
 import Aws from "../../public/aws (1).svg";
 import Unity from "../../public/unity.svg";
 import Net from "../../public/Visual_Studio_Icon_2019.svg";
 import Graph from "../../public/GraphQL_Logo.svg";
 import Typescript from "../../public/Typescript_logo_2020.svg";
 import Languages from "../../public/coding-programming-language-svgrepo-com.svg";
-import Agile2 from "../../public/bulb-svgrepo-com.svg";
 import Code from "../../public/code-desktop-svgrepo-com.svg";
 
 export default function FadeInOnScroll() {

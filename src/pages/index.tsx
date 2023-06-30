@@ -1,7 +1,5 @@
 import React from "react";
 import Hero from "@/components/Hero";
-import Box from "@/components/Box";
-import SoftwareLogosImg from "../../public/groupproject.svg";
 import FlipCard from "@/components/FlipCard";
 import Contact from "@/components/Contact";
 import Header from "@/components/Header";

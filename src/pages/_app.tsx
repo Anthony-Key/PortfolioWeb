@@ -12,7 +12,6 @@ export type ComponentWithPageLayout = AppProps & {
 
 export default function App({ Component, pageProps }: ComponentWithPageLayout) {
   const Layout = Component.Layout || layout;
-
   return (
     <Layout>
       <Head>
