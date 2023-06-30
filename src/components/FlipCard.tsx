@@ -57,7 +57,7 @@ export default function FadeInOnScroll() {
       <div className="container mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 pb-8 text-[#c7c7c7]">
           <div
-            className=" opacity-0 p-5 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 "
+            className=" opacity-0 p-5 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 hover:scale-105"
             ref={(ref) => (elementRefs.current[0] = ref)}
           >
             <div className="p-5 flex items-start">
@@ -82,7 +82,7 @@ export default function FadeInOnScroll() {
           </div>
 
           <div
-            className=" opacity-0 p-5 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 "
+            className=" opacity-0 p-5 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 hover:scale-105"
             ref={(ref) => (elementRefs.current[1] = ref)}
           >
             <div className="p-5 flex items-start">
@@ -102,7 +102,7 @@ export default function FadeInOnScroll() {
           </div>
 
           <div
-            className=" opacity-0 p-5 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 "
+            className=" opacity-0 p-5 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 hover:scale-105"
             ref={(ref) => (elementRefs.current[2] = ref)}
           >
             <div className="p-5 flex items-start">
@@ -124,7 +124,7 @@ export default function FadeInOnScroll() {
           </div>
 
           <div
-            className=" opacity-0 p-5 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 "
+            className=" opacity-0 p-5 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 hover:scale-105"
             ref={(ref) => (elementRefs.current[3] = ref)}
           >
             <div className="p-5 flex items-start">
@@ -151,7 +151,7 @@ export default function FadeInOnScroll() {
           </div>
 
           <div
-            className=" opacity-0 p-5 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 "
+            className=" opacity-0 p-5 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 hover:scale-105"
             ref={(ref) => (elementRefs.current[4] = ref)}
           >
             <div className="p-5 flex items-start">
@@ -178,7 +178,7 @@ export default function FadeInOnScroll() {
           </div>
 
           <div
-            className="opacity-0 p-5 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 "
+            className="opacity-0 p-5 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 hover:scale-105"
             ref={(ref) => (elementRefs.current[5] = ref)}
           >
             <div className="p-5 flex items-start">
@@ -203,7 +203,7 @@ export default function FadeInOnScroll() {
             </span>
           </div>
           <div
-            className=" opacity-0 p-5 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 "
+            className=" opacity-0 p-5 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 hover:scale-105"
             ref={(ref) => (elementRefs.current[6] = ref)}
           >
             <div className="p-5 flex items-start">
@@ -228,7 +228,7 @@ export default function FadeInOnScroll() {
           </div>
 
           <div
-            className=" opacity-0 p-5 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 "
+            className=" opacity-0 p-5 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 hover:scale-105"
             ref={(ref) => (elementRefs.current[7] = ref)}
           >
             <div className="p-5 flex items-start">
