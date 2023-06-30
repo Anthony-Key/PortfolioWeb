@@ -116,7 +116,7 @@ export default function Hero() {
             <Image
               src={GroupImg}
               alt="Bespoke Software Banner Image"
-              width={500}
+              width={450}
               height={20}
               className="float-image rounded-full border-white border-4"
             />
