@@ -68,7 +68,7 @@ export default function Hero() {
           </h3>
           <button
             onClick={() => {
-              window.location.href = "/AnthonyKeyCv.pdf";
+              window.location.href = "/AnthonyKeyCV.pdf";
             }}
             ref={(ref) => (elementRefs.current[0] = ref)}
             className=" opacity-0 hover:bg-white mr-4 hover:text-[#0e111f] text-white font-bold py-3 px-7 rounded-full border inline-flex items-center"
