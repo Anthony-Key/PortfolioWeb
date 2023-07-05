@@ -8,7 +8,7 @@ import VideoCards from "@/components/VideoCards";
 export default function Home() {
   return (
     <>
-      <Header home={"#home"} services={"#projects"} technologies={"/about"} />
+      <Header home={"#home"} services={"#projects"} travelling={"/travelhub"} />
 
       <Hero />
 
