@@ -3,6 +3,8 @@ import Image from "next/image";
 import Head from "next/head";
 import Header from "@/components/Header";
 import "../app/style.css";
+import { useEffect } from "react";
+import ReactGA from "react-ga";
 
 export interface WrapperProps {
   children: React.ReactNode;
@@ -14,6 +16,25 @@ export interface WrapperProps {
 }
 
 const Wrapper = ({ children, title }: WrapperProps) => {
+  const router = useRouter();
+
+  useEffect(() => {
+    ReactGA.initialize("G-EJLK44BBCW");
+    ReactGA.pageview(window.location.pathname + window.location.search);
+  }, []);
+
+  useEffect(() => {
+    const handleRouteChange = (url: string) => {
+      ReactGA.pageview(url);
+    };
+
+    router.events.on("routeChangeComplete", handleRouteChange);
+
+    return () => {
+      router.events.off("routeChangeComplete", handleRouteChange);
+    };
+  }, [router.events]);
+
   return (
     <div>
       <Head>
