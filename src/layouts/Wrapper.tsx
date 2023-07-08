@@ -21,6 +21,8 @@ const Wrapper = ({ children, title }: WrapperProps) => {
   useEffect(() => {
     ReactGA.initialize("G-EJLK44BBCW");
     ReactGA.pageview(window.location.pathname + window.location.search);
+    ReactGA.initialize("G-394702601");
+    ReactGA.pageview(window.location.pathname + window.location.search);
   }, []);
 
   useEffect(() => {
