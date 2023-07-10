@@ -43,15 +43,16 @@ const Wrapper = ({ children, title }: WrapperProps) => {
         <script
           async
           src="https://www.googletagmanager.com/gtag/js?id=G-DKSTM0VM7W"
-        ></script>
+        />
         <script
           dangerouslySetInnerHTML={{
             __html: `
 window.dataLayer = window.dataLayer || [];
 function gtag(){dataLayer.push(arguments);}
-gtag(&#39;js&#39;, new Date());
-
-gtag(&#39;config&#39;, &#39;G-DKSTM0VM7W&#39;);
+gtag('js', new Date());
+gtag('config', 'G-DKSTM0VM7W', {
+  page_path: window.location.pathname,
+});
 `,
           }}
         ></script>
