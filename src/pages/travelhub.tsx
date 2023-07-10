@@ -1,8 +1,8 @@
 import Header from "@/components/Header";
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
-import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
+import ReactGA from "react-ga";
 
 interface Locations {
   name: string;
@@ -49,6 +49,11 @@ const TravelHub: React.FC = () => {
       github: "spain",
     },
   ];
+
+  useEffect(() => {
+    console.log("GA Viewed.");
+    ReactGA.pageview(window.location.pathname);
+  }, []);
 
   return (
     <>
