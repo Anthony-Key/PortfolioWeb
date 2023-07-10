@@ -39,7 +39,24 @@ const Wrapper = ({ children, title }: WrapperProps) => {
           content="A Software Developer with 6 years of professional experience. Looking for Unity Contract / Permanent opportunities! Get in touch!"
         />
         <link rel="icon" href="/favicon.ico" />
+
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-DKSTM0VM7W"
+        ></script>
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag(&#39;js&#39;, new Date());
+
+gtag(&#39;config&#39;, &#39;G-DKSTM0VM7W&#39;);
+`,
+          }}
+        ></script>
       </Head>
+
       <div>{children}</div>
     </div>
   );
