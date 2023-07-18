@@ -93,9 +93,12 @@ export default function FadeInOnScroll() {
         </div>
       </div>
 
-      <h2 className="text-white text-center pb-5 text-2xl font-bold">
-        Website Projects (Typescript, React, Graphql & Tailwind)
+      <h2 className="text-white text-center  text-2xl font-bold">
+        Website Projects
       </h2>
+      <h3 className="text-gray-400 text-center pb-5">
+        Typescript, React, Graphql, Next.js & Tailwind
+      </h3>
       <div className="flex flex-wrap justify-center">
         <a href="https://hellosupermarket.co.uk">
           <img
@@ -111,6 +114,16 @@ export default function FadeInOnScroll() {
           <img
             className="border-white border-2 rounded-3xl mx-auto mr-4 w-[530px] h-[350px]"
             src="screen2.jpg"
+            width="530"
+            height="400"
+            alt="Link to portfolio"
+          ></img>
+        </a>
+
+        <a href="https://github.com/Anthony-Key/Recipme">
+          <img
+            className="border-white border-2 rounded-3xl mx-auto mr-4 w-[530px] h-[350px]"
+            src="screen3.jpg"
             width="530"
             height="400"
             alt="Link to portfolio"
