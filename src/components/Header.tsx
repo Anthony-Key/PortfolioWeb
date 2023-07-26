@@ -27,7 +27,7 @@ export default function Header(props: {
       <nav
         className={`px-4 lg:px-6 py-6 w-full top-0 z-10 fixed ${
           scrolled
-            ? "bg-[#2d3656] text-white transition duration-300 ease-in-out"
+            ? "bg-[#2d3656] text-white transition duration-300 ease-in-out hide-on-mobile"
             : "bg-gradient-to-b from-[#0e111f] to-[#0e111f] text-white transition duration-300 ease-in-out"
         }`}
       >
