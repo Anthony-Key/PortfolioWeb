@@ -17,6 +17,8 @@ export default function Home() {
 
   return (
     <>
+      <section id="home" className="bg-[#0e111f]"></section>
+
       <Header home={"#home"} services={"#projects"} travelling={"/travelhub"} />
 
       <Hero />

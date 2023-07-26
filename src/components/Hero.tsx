@@ -46,7 +46,7 @@ export default function Hero() {
           </h1>
           <h2 className="text-gray-300 text-lg md:text-xl pb-5">
             I am a proficient software engineer, aged 23, possessing a
-            comprehensive range of skills with six years of experience in the
+            comprehensive range of skills with five years of experience in the
             field.
           </h2>
           <h3 className=" bg-orange-400 w-full text-white font-bold p-3 rounded-xl mb-6 text-center inline-flex items-center">
@@ -168,7 +168,7 @@ export default function Hero() {
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="white"
-          className="w-12 h-12 animate-pulse cursor-pointer"
+          className="w-12 h-12 animate-pulse cursor-pointer hover:scale-105"
           onClick={() => {
             window.location.href = "#skills";
           }}

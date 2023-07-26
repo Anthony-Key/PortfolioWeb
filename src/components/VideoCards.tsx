@@ -18,7 +18,7 @@ export default function FadeInOnScroll() {
       "https://www.youtube.com/embed/52TWUcULHKw":
         "Factory Practical Extinguish",
     },
-    { "https://www.youtube.com/embed/TAVvBzdgXlU": "2021 04 07 10 18 17" },
+    { "https://www.youtube.com/embed/BL-PhVhNKPs": "2021 04 07 10 18 17" },
     { "https://www.youtube.com/embed/VAKX_fUzZq8": "Steam" },
     {
       "https://www.youtube.com/embed/VCtfYf0Z0iA":
@@ -64,42 +64,11 @@ export default function FadeInOnScroll() {
       <h1 className="font-bold mb-3 text-3xl text-center text-white">
         Projects & Videos
       </h1>
-      <h2 className="text-gray-400 text-center pb-5 text-2xl font-bold">
-        All projects are built from the ground up without any templates.
-      </h2>
-      <h2 className="text-white text-center pb-5 text-2xl font-bold">Unity</h2>
-      <div className="container mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 pb-8 text-[#c7c7c7]">
-          {youtubeUrls.map((url, index) => {
-            const [urlKey, urlValue] = Object.entries(url)[0];
-            return (
-              <div
-                key={index}
-                ref={(ref) => (elementRefs.current[index] = ref)}
-                className="opacity-0 p-2 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 flex justify-center md:justify-start items-center hover:scale-105"
-              >
-                <iframe
-                  width="560"
-                  height="315"
-                  src={urlKey}
-                  title={urlValue}
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  allowFullScreen
-                ></iframe>
-              </div>
-            );
-          })}
-        </div>
-      </div>
-
-      <h2 className="text-white text-center  text-2xl font-bold">
-        Website Projects
-      </h2>
-      <h3 className="text-gray-400 text-center pb-5">
-        Typescript, React, Graphql, Next.js & Tailwind
+      <h3 className="text-gray-400 text-center pb-5 font-semibold">
+        Each video and screenshot has work that I have done in the past alone or
+        with a team of developers.
       </h3>
-      <div className="flex flex-wrap justify-center">
+      <div className="flex flex-wrap justify-center ">
         <a href="https://hellosupermarket.co.uk">
           <img
             className="border-white border-2 rounded-3xl mx-auto mr-4  w-[530px] h-[350px]"
@@ -122,13 +91,39 @@ export default function FadeInOnScroll() {
 
         <a href="https://github.com/Anthony-Key/Recipme">
           <img
-            className="border-white border-2 rounded-3xl mx-auto mr-4 w-[530px] h-[350px]"
+            className="border-white border-2 rounded-3xl mx-auto mr-4 w-[530px] h-[350px] mb-10"
             src="screen3.jpg"
             width="530"
             height="400"
             alt="Link to portfolio"
           ></img>
         </a>
+      </div>
+
+      <div className="container mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 pb-8 text-[#c7c7c7]">
+          {youtubeUrls.map((url, index) => {
+            const [urlKey, urlValue] = Object.entries(url)[0];
+            return (
+              <div
+                key={index}
+                ref={(ref) => (elementRefs.current[index] = ref)}
+                className="opacity-0 p-2 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 flex justify-center md:justify-start items-center hover:scale-105"
+              >
+                <iframe
+                  className="rounded-lg"
+                  width="560"
+                  height="315"
+                  src={urlKey}
+                  title={urlValue}
+                  frameBorder="0"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  allowFullScreen
+                ></iframe>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

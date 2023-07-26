@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
     xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://arneura.com/</loc>
-    <lastmod>2023-06-02</lastmod>
+    <loc>https://anthony-key.co.uk/</loc>
+    <lastmod>2023-07-26</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
-      <image:loc>https://www.arneura.com/favicon.ico</image:loc>
-      <image:title>Arneura Logo</image:title>
+      <image:loc>https://www.anthony-key.co.uk/favicon.ico</image:loc>
+      <image:title>Anthony Key Icon</image:title>
     </image:image>
   </url>
   <url>
-  <loc>https://arneura.com/about</loc>
+  <loc>https://anthony-key.co.uk/travelhub</loc>
     <lastmod>2023-06-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>

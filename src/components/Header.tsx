@@ -1,5 +1,5 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 export default function Header(props: {
   home: string;
@@ -8,16 +8,32 @@ export default function Header(props: {
   headerTitle?: string;
   warning?: string;
 }) {
-  const [title, setTitle] = useState("Software");
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const isScrolled = window.scrollY > 0;
+      setScrolled(isScrolled);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   return (
     <header>
-      <nav className="bg-gradient-to-b from-[#0e111f] to-[#0e111f] px-4 lg:px-6 py-6 w-full top-0 z-10">
+      <nav
+        className={`px-4 lg:px-6 py-6 w-full top-0 z-10 fixed ${
+          scrolled
+            ? "bg-[#2d3656] text-white transition duration-300 ease-in-out"
+            : "bg-gradient-to-b from-[#0e111f] to-[#0e111f] text-white transition duration-300 ease-in-out"
+        }`}
+      >
         <div className="flex justify-between items-center mx-auto max-w-screen-xl">
           <div>
-            <h1 className="text-3xl font-bold text-white">
-              {props.headerTitle}
-            </h1>
+            <h1 className="text-3xl font-bold">{props.headerTitle}</h1>
           </div>
           <div
             className="hidden justify-center items-center w-full lg:flex lg:w-auto lg:order-1"
@@ -27,7 +43,9 @@ export default function Header(props: {
               <li>
                 <Link
                   href={props.home}
-                  className="hover:underline block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-500 lg:p-0"
+                  className={`hover:underline block py-2 pr-4 pl-3 border-b border-gray-100 lg:border-0 lg:p-0 ${
+                    scrolled ? "text-white" : "text-white"
+                  }`}
                 >
                   Home
                 </Link>
@@ -35,7 +53,9 @@ export default function Header(props: {
               <li>
                 <Link
                   href={props.services}
-                  className="hover:underline block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-500 lg:p-0"
+                  className={`hover:underline block py-2 pr-4 pl-3 border-b border-gray-100 lg:border-0 lg:p-0 ${
+                    scrolled ? "text-white" : "text-white"
+                  }`}
                 >
                   Projects
                 </Link>
@@ -44,7 +64,9 @@ export default function Header(props: {
               <li>
                 <Link
                   href="#skills"
-                  className="hover:underline block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-500 lg:p-0"
+                  className={`hover:underline block py-2 pr-4 pl-3 border-b border-gray-100 lg:border-0 lg:p-0 ${
+                    scrolled ? "text-white" : "text-white"
+                  }`}
                 >
                   Skills
                 </Link>
@@ -53,7 +75,9 @@ export default function Header(props: {
               <li>
                 <Link
                   href={props.travelling}
-                  className="hover:underline block py-2 pr-4 pl-3 text-white border-b border-gray-100 hover:bg-gray-700 lg:hover:bg-transparent lg:border-0 lg:hover:text-blue-500 lg:p-0"
+                  className={`hover:underline block py-2 pr-4 pl-3 border-b border-gray-100 lg:border-0 lg:p-0 ${
+                    scrolled ? "text-white" : "text-white"
+                  }`}
                 >
                   Travelling
                 </Link>
@@ -61,7 +85,9 @@ export default function Header(props: {
 
               <li>
                 <button
-                  className=" border-2 hover:bg-white hover:text-[#0e111f] text-white font-bold py-3 px-4 rounded-full"
+                  className={`border-2 hover:bg-[#0e111f] hover:text-white font-bold py-3 px-4 rounded-full ${
+                    scrolled ? "text-white" : "text-white"
+                  }`}
                   onClick={() => {
                     window.location.href = "/#contact";
                   }}
