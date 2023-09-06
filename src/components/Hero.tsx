@@ -45,11 +45,11 @@ export default function Hero() {
             {`Welcome, I'm Anthony`}
           </h1>
           <h2 className="text-gray-300 text-lg md:text-xl pb-5">
-            I am a proficient software engineer, aged 23, possessing a
+            I am a proficient software engineer, aged 24, possessing a
             comprehensive range of skills with five years of experience in the
             field.
           </h2>
-          <h3 className=" bg-orange-400 w-full text-white font-bold p-3 rounded-xl mb-6 text-center inline-flex items-center">
+          <h3 className=" bg-orange-400 w-auto text-white font-bold p-3 rounded-xl mb-6 text-center inline-flex items-center">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -64,8 +64,9 @@ export default function Hero() {
                 d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
               />
             </svg>
-            Looking for Freelance Unity Work
+            Looking for Freelance Unity VR/AR Work
           </h3>
+          <br />
           <button
             onClick={() => {
               window.location.href = "/AnthonyKeyCV.pdf";

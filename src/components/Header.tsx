@@ -43,7 +43,7 @@ export default function Header(props: {
               <li>
                 <Link
                   href={props.home}
-                  className={`hover:underline block py-2 pr-4 pl-3 border-b border-gray-100 lg:border-0 lg:p-0 ${
+                  className={`hover:scale-105 hover:text-white block py-2 pr-4 pl-3 border-b border-gray-100 lg:border-0 lg:p-0 ${
                     scrolled ? "text-white" : "text-white"
                   }`}
                 >
@@ -53,7 +53,7 @@ export default function Header(props: {
               <li>
                 <Link
                   href={props.services}
-                  className={`hover:underline block py-2 pr-4 pl-3 border-b border-gray-100 lg:border-0 lg:p-0 ${
+                  className={`hover:scale-105 hover:text-white block py-2 pr-4 pl-3 border-b border-gray-100 lg:border-0 lg:p-0 ${
                     scrolled ? "text-white" : "text-white"
                   }`}
                 >
@@ -64,7 +64,7 @@ export default function Header(props: {
               <li>
                 <Link
                   href="#skills"
-                  className={`hover:underline block py-2 pr-4 pl-3 border-b border-gray-100 lg:border-0 lg:p-0 ${
+                  className={`hover:scale-105 hover:text-white block py-2 pr-4 pl-3 border-b border-gray-100 lg:border-0 lg:p-0 ${
                     scrolled ? "text-white" : "text-white"
                   }`}
                 >
@@ -75,7 +75,7 @@ export default function Header(props: {
               <li>
                 <Link
                   href={props.travelling}
-                  className={`hover:underline block py-2 pr-4 pl-3 border-b border-gray-100 lg:border-0 lg:p-0 ${
+                  className={`hover:scale-105 hover:text-white block py-2 pr-4 pl-3 border-b border-gray-100 lg:border-0 lg:p-0 ${
                     scrolled ? "text-white" : "text-white"
                   }`}
                 >
@@ -85,7 +85,7 @@ export default function Header(props: {
 
               <li>
                 <button
-                  className={`border-2 hover:bg-[#0e111f] hover:text-white font-bold py-3 px-4 rounded-full ${
+                  className={`border-2 hover:bg-[#0e111f] hover:scale-105 hover:text-white font-bold py-3 px-4 rounded-full ${
                     scrolled ? "text-white" : "text-white"
                   }`}
                   onClick={() => {
