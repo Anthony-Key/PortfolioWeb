@@ -89,33 +89,17 @@ const ImageGallery: React.FC = () => {
   const paginate = (pageNumber: number) => setCurrentPage(pageNumber);
 
   return (
-    <div className="bg-[#1c223b]">
+    <div className="bg-[#1c223b] h-full">
       <Header
         home={"/"}
         services={""}
         travelling={"/travelhub"}
         headerTitle={header}
-        warning="IF WHITE, TRY REFRESH"
       />
-      <Carousel responsive={responsive}>
-        {firstDisplay.map((image) => (
-          <img
-            key={image.name}
-            src={image.url}
-            alt={image.name}
-            className="h-screen w-screen"
-          />
-        ))}
-      </Carousel>
       <div className="flex-col items-center justify-center">
         <h2 className="text-white text-center font-bold text-3xl mt-5 mb-5">
           Gallery
         </h2>
-        <div className="flex items-center justify-center">
-          <h4 className="text-sm font-bold text-white bg-orange-400 rounded-full pl-2 pr-2 p-1 w-72 text-center">
-            TRY REFRESH IF NOTHING LOADS!
-          </h4>
-        </div>
       </div>
 
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-5 p-5">
@@ -136,7 +120,7 @@ const ImageGallery: React.FC = () => {
               onClick={() => paginate(index + 1)}
               className={`${
                 currentPage === index + 1 ? "active" : ""
-              } text-white text-2xl hover:bg-white hover:text-black m-2 font-bold`}
+              } text-white text-2xl rounded-full p-2 hover:bg-white hover:text-black m-2 font-bold`}
             >
               {index + 1}
             </button>

@@ -16,13 +16,19 @@ const TravelHub: React.FC = () => {
       name: "Finland",
       previewImg:
         "https://raw.githubusercontent.com/Anthony-Key/PortfolioWeb/main/assets/travel/Finland/IMG_20230429_110716.jpg",
-      github: "Finland",
+      github: "finland",
     },
     {
       name: "Uk",
       previewImg:
         "https://raw.githubusercontent.com/Anthony-Key/PortfolioWeb/main/assets/travel/Uk/FB_IMG_1629978121329.jpg",
-      github: "Uk",
+      github: "uk",
+    },
+    {
+      name: "Croatia",
+      previewImg:
+        "https://raw.githubusercontent.com/Anthony-Key/PortfolioWeb/main/assets/travel/Uk/FB_IMG_1629978121329.jpg",
+      github: "croatia",
     },
     {
       name: "Germany",
@@ -64,17 +70,17 @@ const TravelHub: React.FC = () => {
         headerTitle={"Travel Hub"}
       />
 
-      <div className="bg-[#1c223b] h-screen w-full flex flex-wrap justify-center pt-[10%]">
+      <div className="bg-[#1c223b] h-full p-[4%] w-full flex flex-wrap justify-center pt-[10%]">
         {locations.map((location) => (
           <div
             key={0}
-            className="p-3 w-full sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6"
+            className="m-3 w-full min-w-[300px] sm:w-1/2 md:w-1/3 lg:w-1/4 xl:w-1/6"
           >
             <Link href={`/travelling?location=${location.github}`}>
-              <div className="hover:bg-white hover:bg-opacity-5 rounded-3xl">
+              <div className=" rounded-3xl">
                 <img
                   src={location.previewImg}
-                  className="rounded-full w-64 h-64 object-cover mx-auto"
+                  className="hover:scale-105 rounded-full w-64 h-64 object-cover mx-auto border-2"
                 />
               </div>
               <h2 className="text-white font-semibold text-center mt-3 text-xl">
