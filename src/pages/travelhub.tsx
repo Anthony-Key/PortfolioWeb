@@ -15,19 +15,19 @@ const TravelHub: React.FC = () => {
     {
       name: "Finland",
       previewImg:
-        "https://raw.githubusercontent.com/Anthony-Key/PortfolioWeb/main/assets/travel/Finland/IMG_20230429_110716.jpg",
+        "https://github.com/Anthony-Key/PortfolioWeb/blob/main/assets/travel/finland/IMG_9644.JPG?raw=true",
       github: "finland",
     },
     {
       name: "Uk",
       previewImg:
-        "https://raw.githubusercontent.com/Anthony-Key/PortfolioWeb/main/assets/travel/Uk/FB_IMG_1629978121329.jpg",
+        "https://github.com/Anthony-Key/PortfolioWeb/blob/main/assets/travel/uk/Screenshot_2022-05-18-19-19-33-484_com.miui.gallery.jpg?raw=true",
       github: "uk",
     },
     {
       name: "Croatia",
       previewImg:
-        "https://raw.githubusercontent.com/Anthony-Key/PortfolioWeb/main/assets/travel/Uk/FB_IMG_1629978121329.jpg",
+        "https://github.com/Anthony-Key/PortfolioWeb/blob/main/assets/travel/croatia/440915898_2117788971922719_8813615629784179464_n.jpg?raw=true",
       github: "croatia",
     },
     {
