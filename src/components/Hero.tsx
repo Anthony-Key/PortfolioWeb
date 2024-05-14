@@ -39,7 +39,7 @@ export default function Hero() {
 
   return (
     <div className=" w-auto h-screen bg-gradient-to-b from-[#0e111f] to-[#1c223b] mobileHero">
-      <div className="flex flex-col items-center justify-center md:flex-row md:p-40">
+      <div className="flex flex-col items-center justify-center md:flex-row md:p-10">
         <div className="w-full md:w-2/4 max-w-lg text-center md:text-left">
           <h1 className="font-bold text-arneuraHeroText text-4xl md:text-5xl pb-3">
             {`Welcome, I'm Anthony`}
@@ -64,7 +64,7 @@ export default function Hero() {
                 d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
               />
             </svg>
-            Looking for Freelance Unity VR/AR Work
+            Senior Unity Developer - Open to freelance
           </h3>
           <br />
           <button

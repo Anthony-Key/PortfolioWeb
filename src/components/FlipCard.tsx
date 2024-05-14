@@ -45,7 +45,7 @@ export default function FadeInOnScroll() {
   }, []);
 
   return (
-    <div className="w-full bg-[#1c223b]">
+    <div className="w-full bg-[#1c223b] pl-20 pr-20">
       <h1 className="font-bold mb-3 text-3xl text-center text-white">
         Skills & Knowledge
       </h1>

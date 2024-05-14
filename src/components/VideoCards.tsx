@@ -68,7 +68,7 @@ export default function FadeInOnScroll() {
         Each video and screenshot has work that I have done in the past alone or
         with a team of developers.
       </h3>
-      <div className="flex flex-wrap justify-center ">
+      <div className="flex flex-wrap justify-center">
         <a href="https://hellosupermarket.co.uk">
           <img
             className="border-white border-2 rounded-3xl mx-auto mr-4  w-[530px] h-[350px]"
@@ -89,7 +89,7 @@ export default function FadeInOnScroll() {
           ></img>
         </a>
 
-        <a href="https://github.com/Anthony-Key/Recipme">
+        <a href="https://github.com/Anthony-Key/Recipme" className="pt-4">
           <img
             className="border-white border-2 rounded-3xl mx-auto mr-4 w-[530px] h-[350px] mb-10"
             src="screen3.jpg"
@@ -100,7 +100,7 @@ export default function FadeInOnScroll() {
         </a>
       </div>
 
-      <div className="container mx-auto">
+      <div className="container mx-auto pl-20 pr-20">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 pb-8 text-[#c7c7c7]">
           {youtubeUrls.map((url, index) => {
             const [urlKey, urlValue] = Object.entries(url)[0];
