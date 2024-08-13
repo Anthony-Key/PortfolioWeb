@@ -60,47 +60,113 @@ export default function FadeInOnScroll() {
   }, []);
 
   return (
-    <div className="w-full bg-[#1c223b]">
-      <h1 className="font-bold mb-3 text-3xl text-center text-white">
-        Projects & Videos
-      </h1>
-      <h3 className="text-gray-400 text-center pb-5 font-semibold">
-        Each video and screenshot has work that I have done in the past alone or
-        with a team of developers.
-      </h3>
-      <div className="flex flex-wrap justify-center">
-        <a href="https://hellosupermarket.co.uk">
-          <img
-            className="border-white border-2 rounded-3xl mx-auto mr-4  w-[530px] h-[350px]"
-            src="screen.jpg"
-            width="530"
-            height="400"
-            alt="Website that I built using typescript, graphql, tailwind and react"
-          ></img>
-        </a>
-
-        <a href="https://anthony-key.co.uk">
-          <img
-            className="border-white border-2 rounded-3xl mx-auto mr-4 w-[530px] h-[350px]"
-            src="screen2.jpg"
-            width="530"
-            height="400"
-            alt="Link to portfolio"
-          ></img>
-        </a>
-
-        <a href="https://github.com/Anthony-Key/Recipme" className="pt-4">
-          <img
-            className="border-white border-2 rounded-3xl mx-auto mr-4 w-[530px] h-[350px] mb-10"
-            src="screen3.jpg"
-            width="530"
-            height="400"
-            alt="Link to portfolio"
-          ></img>
-        </a>
+    <div className="w-full bg-white">
+      <div className="max-w-6xl mx-auto">
+        <h1 className="mb-3 text-3xl text-left text-black">
+          Projects & Videos
+        </h1>
+        <h3 className="text-left pb-5 text-black">
+          Each video and screenshot has work that I have done in the past alone
+          or with a team of developers.
+        </h3>
       </div>
 
-      <div className="container mx-auto pl-20 pr-20">
+      <div className="flex flex-wrap justify-center">
+        <div className="bg-black max-w-6xl w-full bg-opacity-5 rounded-lg p-6 space-y-6">
+          <a
+            href="https://stage.traveltrekker.co.uk/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
+            <div className="flex items-center bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="Screenshot 2024-08-13 215957.png"
+                alt="Website that I built using TypeScript, GraphQL, Tailwind, and React"
+                className="w-[120px] h-[100px] rounded-lg mr-4 object-cover"
+              />
+              <div>
+                <h3 className="text-lg font-semibold">Travel Trekker</h3>
+                <p className="text-gray-600">
+                  A travelling website that provides attractions all around the
+                  world. This uses Typescript, React, NextJS, Graphql &
+                  Terraform.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a
+            href="https://hellosupermarket.co.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
+            <div className="flex items-center bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="screen.jpg"
+                alt="Website that I built using TypeScript, GraphQL, Tailwind, and React"
+                className="w-[120px] h-[100px] rounded-lg mr-4 object-cover"
+              />
+              <div>
+                <h3 className="text-lg font-semibold">Hello Supermarket</h3>
+                <p className="text-gray-600">
+                  A website built using TypeScript, GraphQL, Tailwind, and
+                  React. It showcases a modern, responsive design for an online
+                  supermarket.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://anthony-key.co.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
+            <div className="flex items-center bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="screen2.jpg"
+                alt="Portfolio Website"
+                className="w-[120px] h-[100px] rounded-lg mr-4 object-cover"
+              />
+              <div>
+                <h3 className="text-lg font-semibold">Portfolio</h3>
+                <p className="text-gray-600">
+                  My personal portfolio, showcasing projects, skills, and
+                  experience in web development. Built with a focus on clean
+                  design and usability.
+                </p>
+              </div>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/Anthony-Key/Recipme"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="block"
+          >
+            <div className="flex items-center bg-white p-4 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+              <img
+                src="screen3.jpg"
+                alt="Recipme Project"
+                className="w-[120px] h-[100px] rounded-lg mr-4 object-cover"
+              />
+              <div>
+                <h3 className="text-lg font-semibold">Recipme</h3>
+                <p className="text-gray-600">
+                  A project hosted on GitHub, Recipme is a recipe-sharing
+                  platform that demonstrates my ability to integrate various web
+                  technologies.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div className="container mx-auto mt-10 max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-5 pb-8 text-[#c7c7c7]">
           {youtubeUrls.map((url, index) => {
             const [urlKey, urlValue] = Object.entries(url)[0];
@@ -108,12 +174,12 @@ export default function FadeInOnScroll() {
               <div
                 key={index}
                 ref={(ref) => (elementRefs.current[index] = ref)}
-                className="opacity-0 p-2 rounded-2xl shadow-[#3f4b75] bg-[#2d3656] hover:border-b-blue-500 hover:border-b-4 border-b-4 flex justify-center md:justify-start items-center hover:scale-105"
+                className="opacity-0 rounded-2xl border-b-4 flex justify-center md:justify-start items-center "
               >
                 <iframe
                   className="rounded-lg"
-                  width="560"
-                  height="315"
+                  width="280"
+                  height="280"
                   src={urlKey}
                   title={urlValue}
                   frameBorder="0"

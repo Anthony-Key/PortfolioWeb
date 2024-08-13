@@ -27,8 +27,8 @@ export default function Header(props: {
       <nav
         className={`px-4 lg:px-6 py-6 w-full top-0 z-10 fixed ${
           scrolled
-            ? "bg-[#2d3656] text-white transition duration-300 ease-in-out hide-on-mobile"
-            : "bg-gradient-to-b from-[#0e111f] to-[#0e111f] text-white transition duration-300 ease-in-out"
+            ? " bg-gray-200 text-black transition duration-300 ease-in-out hide-on-mobile"
+            : "bg-white text-black transition duration-300 ease-in-out"
         }`}
       >
         <div className="flex justify-between items-center mx-auto max-w-screen-xl">
@@ -39,13 +39,13 @@ export default function Header(props: {
             className="hidden justify-center items-center w-full lg:flex lg:w-auto lg:order-1"
             id="mobile-menu"
           >
-            <ul className="flex flex-col mt-4 font-semibold lg:flex-row lg:space-x-8 lg:mt-0 justify-center items-center float-right">
+            <ul className="flex p-3 flex-col font-thin mt-4 bg-black bg-opacity-5  rounded-lg border-gray-200 lg:flex-row lg:space-x-8 lg:mt-0 justify-center items-center float-right">
               <li>
                 <Link
                   href={props.home}
-                  className={`hover:scale-105 hover:text-white block py-2 pr-4 pl-3 border-b border-gray-100 lg:border-0 lg:p-0 ${
-                    scrolled ? "text-white" : "text-white"
-                  }`}
+                  className={` hover:text-gray-800 block ml-4 py-2 pr-4 pl-3 border-b border-gray-100 lg:border-0 lg:p-0 text-black 
+                  
+                  `}
                 >
                   Home
                 </Link>
@@ -53,9 +53,7 @@ export default function Header(props: {
               <li>
                 <Link
                   href={props.services}
-                  className={`hover:scale-105 hover:text-white block py-2 pr-4 pl-3 border-b border-gray-100 lg:border-0 lg:p-0 ${
-                    scrolled ? "text-white" : "text-white"
-                  }`}
+                  className={` hover:text-gray-800 block ml-4 py-2 pr-4 pl-3 border-b border-gray-100 lg:border-0 lg:p-0 text-black`}
                 >
                   Projects
                 </Link>
@@ -64,9 +62,7 @@ export default function Header(props: {
               <li>
                 <Link
                   href="#skills"
-                  className={`hover:scale-105 hover:text-white block py-2 pr-4 pl-3 border-b border-gray-100 lg:border-0 lg:p-0 ${
-                    scrolled ? "text-white" : "text-white"
-                  }`}
+                  className={` hover:text-gray-800 block ml-4 py-2 pr-4 pl-3 border-b border-gray-100 lg:border-0 lg:p-0 text-black`}
                 >
                   Skills
                 </Link>
@@ -75,9 +71,7 @@ export default function Header(props: {
               <li>
                 <Link
                   href={props.travelling}
-                  className={`hover:scale-105 hover:text-white block py-2 pr-4 pl-3 border-b border-gray-100 lg:border-0 lg:p-0 ${
-                    scrolled ? "text-white" : "text-white"
-                  }`}
+                  className={` hover:text-gray-800 block ml-4 py-2 pr-4 pl-3 border-b border-gray-100 lg:border-0 lg:p-0 text-black`}
                 >
                   Travelling
                 </Link>
@@ -85,9 +79,7 @@ export default function Header(props: {
 
               <li>
                 <button
-                  className={`border-2 hover:bg-[#0e111f] hover:scale-105 hover:text-white font-bold py-3 px-4 rounded-full ${
-                    scrolled ? "text-white" : "text-white"
-                  }`}
+                  className={` hover:text-gray-800 block ml-4 py-2 mr-3 pr-4 pl-3 border-b border-gray-100 lg:border-0 lg:p-0 text-black`}
                   onClick={() => {
                     window.location.href = "/#contact";
                   }}

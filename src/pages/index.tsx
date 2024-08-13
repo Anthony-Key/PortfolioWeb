@@ -17,24 +17,24 @@ export default function Home() {
 
   return (
     <>
-      <section id="home" className="bg-[#0e111f]"></section>
+      <section id="home" className="bg-white"></section>
 
       <Header home={"#home"} services={"#projects"} travelling={"/travelhub"} />
 
       <Hero />
 
-      <section id="skills" className="bg-[#1c223b]"></section>
+      <section id="skills" className="bg-white"></section>
 
       <div className="w-full">
         <FlipCard />
       </div>
 
-      <section id="projects" className="bg-[#1c223b]"></section>
+      <section id="projects" className="bg-white"></section>
       <div className="w-full">
         <VideoCards />
       </div>
 
-      <div className="flex flex-col items-center bg-[#1c223b]">
+      <div className="flex flex-col items-center bg-white">
         <div className="w-full max-w-6xl">
           <Contact />
         </div>

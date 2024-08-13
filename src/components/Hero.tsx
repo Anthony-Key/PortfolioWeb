@@ -38,41 +38,25 @@ export default function Hero() {
   }, []);
 
   return (
-    <div className=" w-auto h-screen bg-gradient-to-b from-[#0e111f] to-[#1c223b] mobileHero">
+    <div className=" w-auto h-screen bg-white mobileHero">
       <div className="flex flex-col items-center justify-center md:flex-row md:p-10">
         <div className="w-full md:w-2/4 max-w-lg text-center md:text-left">
-          <h1 className="font-bold text-arneuraHeroText text-4xl md:text-5xl pb-3">
-            {`Welcome, I'm Anthony`}
+          <h1 className=" text-black text-4xl md:text-5xl pb-3">
+            {`I'm Anthony, Nice to meet you`}
           </h1>
-          <h2 className="text-gray-300 text-lg md:text-xl pb-5">
-            I am a proficient software engineer, aged 24, possessing a
+          <h2 className="text-black text-lg md:text-xl pb-5">
+            I am a proficient Senior Software Engineer, aged 25, possessing a
             comprehensive range of skills with five years of experience in the
             field.
           </h2>
-          <h3 className=" bg-orange-400 w-auto text-white font-bold p-3 rounded-xl mb-6 text-center inline-flex items-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke-width="2"
-              stroke="currentColor"
-              className="w-6 h-6 mr-2"
-            >
-              <path
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                d="M11.25 11.25l.041-.02a.75.75 0 011.063.852l-.708 2.836a.75.75 0 001.063.853l.041-.021M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-9-3.75h.008v.008H12V8.25z"
-              />
-            </svg>
-            Senior Unity Developer - Open to freelance
-          </h3>
+
           <br />
           <button
             onClick={() => {
               window.location.href = "/AnthonyKeyCV.pdf";
             }}
             ref={(ref) => (elementRefs.current[0] = ref)}
-            className=" opacity-0 hover:bg-white mr-4 hover:text-[#0e111f] text-white font-bold py-3 px-7 rounded-full border inline-flex items-center"
+            className=" opacity-0 max-h-[50px]  hover:bg-white mr-4 hover:text-[#0e111f] text-black py-3 px-7 rounded-full  border border-black inline-flex items-center"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -80,7 +64,7 @@ export default function Hero() {
               viewBox="0 0 24 24"
               stroke-width="1.5"
               stroke="currentColor"
-              className="w-6 h-6 mr-2"
+              className="w-6 h-6 mr-2 mb-1"
             >
               <path
                 stroke-linecap="round"
@@ -96,7 +80,7 @@ export default function Hero() {
               window.location.href = "https://github.com/Anthony-Key";
             }}
             ref={(ref) => (elementRefs.current[1] = ref)}
-            className="opacity-0 mr-4 hover:bg-white hover:text-[#0e111f] text-white font-bold py-3 px-7 rounded-full border inline-flex items-center"
+            className="opacity-0 mr-4 max-h-[50px] hover:bg-white hover:text-[#0e111f] text-black  py-3 px-7 rounded-full  border border-black inline-flex items-center"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -106,7 +90,7 @@ export default function Hero() {
               className="mr-2"
             >
               <path
-                className=" fill-white"
+                className=" fill-black"
                 d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
               />
             </svg>
@@ -119,7 +103,7 @@ export default function Hero() {
                 "https://www.linkedin.com/in/anthonylloydkey/";
             }}
             ref={(ref) => (elementRefs.current[2] = ref)}
-            className=" opacity-0 hover:bg-white hover:text-[#0e111f] text-white font-bold py-3 px-7 rounded-full border inline-flex items-center"
+            className=" opacity-0 hover:bg-white max-h-[50px] hover:text-[#0e111f] text-black  py-3 px-7 rounded-full border border-black  inline-flex items-center"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -151,21 +135,21 @@ export default function Hero() {
           </button>
         </div>
         <div className="w-full md:w-2/4 flex justify-center items-center mt-5 md:mt-0">
-          <div className="hidden md:block">
+          <div className=" justify-center items-center flex-col">
             <Image
               src={GroupImg}
               alt="Bespoke Software Banner Image"
               width={450}
               height={20}
-              className="float-image rounded-full border-white border-4"
+              className=" rounded-full border-4 border-black border-opacity-20"
             />
           </div>
         </div>
       </div>
-      <div className="flex items-center justify-center">
+      <div className="flex items-center mt-10 justify-center">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          fill="none"
+          fill="black"
           viewBox="0 0 24 24"
           stroke-width="1.5"
           stroke="white"
