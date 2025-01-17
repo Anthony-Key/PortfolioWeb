@@ -74,7 +74,7 @@ export default function FadeInOnScroll() {
       <div className="flex flex-wrap justify-center">
         <div className="bg-black max-w-6xl w-full bg-opacity-5 rounded-lg p-6 space-y-6">
           <a
-            href="https://stage.traveltrekker.co.uk/"
+            href="https://www.traveltrekker.co.uk/"
             target="_blank"
             rel="noopener noreferrer"
             className="block"
